@@ -61,7 +61,9 @@ section {
   align-self: flex-start;
   border-radius: 10px;
 }
-
+#resume-btn:hover{
+  background-color: #2980b9;
+}
 @media screen and (max-width: 480px) {
   .about {
     flex-direction: column;
