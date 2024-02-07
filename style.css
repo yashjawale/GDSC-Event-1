@@ -27,18 +27,19 @@ img {
 section {
   max-width: 720px;
   margin: 0 auto;
-  padding: 24px 16px;
+  padding: 64px 16px;
 }
 
 /* Id Styles */
 #main-section {
-  background-color: #555;
+  background-color: #242424;
   color: white;
 }
 
 /* Class Styles */
 .about {
   display: flex;
+  align-items: center;
   gap: 50px;
   text-align: left;
   padding: 96px 16px;
@@ -50,6 +51,15 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+#resume-btn {
+  color: black;
+  text-decoration: none;
+  background-color: #3498db;
+  padding: 10px;
+  align-self: flex-start;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 480px) {
@@ -67,7 +77,7 @@ section {
 }
 
 /* Multi selectors */
-#sub-section > table {
+#sub-section>table {
   margin: 0 auto;
   padding: 10px;
 }
@@ -79,12 +89,16 @@ td {
   text-align: left;
 }
 
+tr:nth-child(even) {
+  background-color: #cecece;
+}
+
 /* Contact Section Styles */
 #contact {
   text-align: center;
 }
 
-#contact > div {
+#contact>div {
   text-align: left;
   width: 60%;
   margin: 0 auto;
@@ -113,13 +127,19 @@ button {
 
 /* List Styles */
 
-#list > div {
+#list>div {
   text-align: left;
   margin: 0 auto;
   display: flex;
   justify-content: center;
 }
 
-#list li:nth-child(even) {
-  color: red;
+ol {
+  list-style-type: lower-alpha;
+}
+footer{
+  text-align: center;
+  padding: 12px 0;
+  background-color: #333;
+  color: white;
 }
